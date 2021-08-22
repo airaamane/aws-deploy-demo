@@ -31,8 +31,8 @@ jobs:
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          application_name: angular-demo
-          environment_name: angular-demo-env
+          application_name: angular-docker-demo
+          environment_name: ngx-docker-demo-env
           version_label: "angular-docker-aws-demo-${{ steps.format-time.outputs.replaced }}"
           region: eu-west-1
           deployment_package: deploy.zip
